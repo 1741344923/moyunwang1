@@ -1,0 +1,46 @@
+.content-1{
+    background-color: white;
+}
+.content1 dl{
+    width: 1276px;
+    border: 1px solid #aaaaaa;
+}
+.content1 dl dd{
+    background-color: white;
+}
+.content_left{
+    position: relative;
+}
+.content_left .red{
+    color: red;
+}
+.content_left .bl{
+    color: #2d99ca;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+}
+.content_left .bt{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.content_left h2 img{
+    margin-left: 260px;
+}
+.content_left .bt span{
+    float: right;
+    color: #2d99ca;
+}
+
+
+
+
+
+
+
+
+
+
+

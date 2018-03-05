@@ -1,0 +1,59 @@
+.renwu {
+    width: 1283px;
+    height: 855px;
+    border: 1px solid #aaaaaa;
+    margin: 0 auto 180px;
+    padding-left: 68px;
+    padding-top: 28px;
+}
+
+.renwu h2 {
+    width: 148px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #45b6f7;
+}
+
+.renwu ul li {
+    line-height: 62px;
+    color: #666666;
+    font-size: 20px;
+}
+
+.renwu ul li em {
+    margin-right: 35px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+}
+.renwu p{
+    color: #f7552f;
+    font-size: 14px;
+}
+.publish {
+    width: 109px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #f7552f;
+    display: inline-block;
+    font-size: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

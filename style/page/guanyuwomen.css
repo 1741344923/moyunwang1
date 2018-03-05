@@ -1,0 +1,70 @@
+
+.about{
+    padding-bottom: 210px;
+    border-bottom: 2px solid #45b6f7;
+}
+.about_left{
+    width: 305px;
+    border: 2px solid #e5e5e5;
+    text-align: center;
+    line-height: 60px;
+    color: #e5e5e5;
+    margin-right: 35px;
+}
+.about_left ul li{
+    font-size: 16px;
+}
+.about_left ul li em{
+    display: inline-block;
+    margin-right: 110px;
+}
+
+.about_right{
+    border: 2px solid #e5e5e5;
+    width: 940px;
+    height: 1103px;
+}
+.about_right h2{
+    text-align: center;
+    font-size: 36px;
+    height: 90px;
+    line-height: 90px;
+}
+.about_right div{
+    font-size: 16px;
+    padding: 0 26px;
+}
+
+.about_right div p{
+    text-indent: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

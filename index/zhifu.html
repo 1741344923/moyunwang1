@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付</title>
+    <link rel="stylesheet" href="../style/commons/common.css">
+    <link rel="stylesheet" href="../style/page/zhifu.css">
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<!--页眉-->
+<div style="background-color: #f7f7f7;">
+    <div class="header">
+        <div class="clearfix">
+            <p class="fl">
+                当前位置>> <a href="../index/shouYe.html">首页>></a><i><a href="../index/zhaohuimima.html">找回密码</a></i>
+            </p>
+            <div class="fr">
+                <a href="" style="border-left: 1px solid #aaaaaa; border-right: 1px solid #aaaaaa; padding: 0 10px;">帮助中心</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header_box" style="background-color: white;">
+    <div class="comWidth clearfix" style="width: 1400px; margin: 0 auto;">
+        <img src="../images/commons/01.png" alt="">
+        <div class="header_box2 fr">
+            <ul class="clearfix">
+                <li class="brnone"><a href="../index/faburenwu1.html">发布任务</a></li>
+                <li style="margin-right: 5px;"><a href="../index/faburenwu.html">浏览任务</a></li>
+                <li class="brnone"><a href="../index/denglv.html"><i class="deng_l"></i>登录</a></li>
+                <li><a href="../index/huiyuanzhuce.html"><i class="zhuce"></i>注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--中间的-->
+<div class="payment">
+    <div class="payment1">
+        <ul>
+            <li>支付项目：h5开发</li>
+            <li>你要支付的金额为：￥3000.00</li>
+            <li>您可用的余额为：￥0.00</li>
+        </ul>
+    </div>
+    <form action="">
+        <div class="choice">
+            <div class="hd clearfix">
+                <div class="on">选择支付方式</div>
+                <div>正在支付</div>
+                <div>完成支付</div>
+            </div>
+            <div class="bd">
+                <!---->
+                <div class="on">
+                    <ul class="clearfix">
+                        <li style="margin-right: 30px;"><img src="../images/zhifu/1.png" alt=""></li>
+                        <li><img src="../images/zhifu/2.png" alt=""></li>
+                    </ul>
+                    <p><input type="submit" value="确认，去付款"></p>
+                </div>
+                <!---->
+                <div class="ls">
+                    <div class="ls_box clearfix">
+                        <div style="padding-left: 248px; height: 90px;line-height: 55px; padding-top: 35px;">正在使用即时到账交易[?]</div>
+                        <div class="fl" style="width: 450px; margin-left: 248px;">[xx任务][C2017]定金 收款方：徐州八方网络科技有...</div>
+                        <div class="fr" style="width: 450px;"><span style="color: #ff6200; font-weight: bold;">3000.00</span><em>元</em></div>
+                    </div>
+                    <div class="clearfix" style="padding-left: 215px; margin-top: 35px; margin-bottom: 289px;">
+                        <div class="ls_bot fl">
+                            <ol style="">
+                                <li style="margin-top: 29px;">扫一扫付款（元）</li>
+                                <li style="color: #ff6200; font-weight: bold;">3000.00</li>
+                                <li style="margin-top: 45px; margin-bottom: 30px;"><img src="../images/zhifu/4.png"
+                                                                                        alt=""></li>
+                                <li class="dakai"><img src="../images/zhifu/5.png" alt="">打开手机支付宝 <br>
+                                    扫一扫继续付款
+                                </li>
+                                <li style="margin-top: 33px;"><a href="" style="text-decoration: underline;">首次使用请下载手机支付宝</a>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="ls_bot_rg fl">
+                            <form action="">
+                                <img style="margin-top: 120px; margin-bottom: 50px;" src="../images/zhifu/3.png" alt="">
+                                <input class="sbm" type="submit" value="登录账户付款">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="complete">
+                    <form action="">
+                        <img src="../images/zhifu/6.png" alt="">
+                        <span style="display: inline-block; height: 100px;line-height: 100px;">支付成功!</span><br>
+                        <em>您可以在 <a href="" style="color: red;">订单管理</a>查看您的订单进程。</em>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!--底部-->
+<div style="border-top: 2px solid #51bbf8">
+    <div class="footer comWidth">
+        <p class="fl">© fengbo 上海风博数据有限公司 沪公网安备 12345678910234号</p>
+        <div class="fl">
+            <h3>关注我们</h3>
+            <img src="../images/commons/05.png" alt="">
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".choice").slide({
+            titCell: '.hd div', // 按钮
+            mainCell: ".bd",   // 每项切换的父级
+            prev:'.prev', // 上一个
+            next:'.next', // 下一个
+            autoPlay: true,    // 自动播放
+            interTime: 2000,   // 每隔几秒走一次
+            effect: 'fade' // 特效，展示方式 fade fold leftLoop left
+        });
+    });
+</script>
+</body>
+</html>

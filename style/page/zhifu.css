@@ -1,0 +1,132 @@
+.payment{
+    width: 1534px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.payment1{
+    height: 180px;
+    background-color: #f1f3c8;
+    padding-top: 15px;
+    padding-left: 56px;
+    color: #666666;
+}
+.payment1>ul>li{
+    height: 30px;
+    line-height: 30px;
+}
+form .choice .hd{
+    margin-top: 75px;
+}
+form .choice .hd div{
+    float: left;
+    width: 510px;
+    text-align: center;
+    border-top: 8px solid #d5d5d5;
+    position: relative;
+    height: 90px;
+    line-height: 90px;
+}
+form .choice .hd div.on{
+    border-top: 8px solid #ff6800;
+}
+form .choice .hd div.on:after{
+    background-color: #ff6800;
+}
+form .choice .hd div:after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    margin-left: -10px;
+
+}
+form .choice .bd{
+    text-align: center;
+}
+form .choice .bd ul{
+    margin-bottom: 233px;
+}
+form .choice .bd ul li{
+    float: left;
+}
+form .choice .bd p{
+    display: inline-block;
+    margin-bottom: 260px;
+}
+form .choice .bd p input{
+    border: none;
+    width: 162px;
+    height: 45px;
+    background-color: #f7552f;
+    color: #ffffff;
+    font-size: 18px;
+}
+form .choice .bd>div{
+    display: none;
+
+}
+form .choice .bd>div.on{
+    display: block;
+}
+form .ls{
+    width: 100%;
+    background-color: #f4f6f8;
+}
+
+.ls_bot{
+    width: 920px;
+    height: 501px;
+    background-color: white;
+    border-top: 5px solid #e6e6e6;
+}
+.ls_bot_rg{
+    width: 181px;
+    height: 506px;
+    background-color: #e6e6e6;
+}
+
+.sbm{
+    border: none;
+    width: 122px;
+    height: 42px;
+    background-color: #45b6f7;
+    color: #ffffff;
+    font-size: 14px;
+}
+.dakai{
+    position: relative;
+    display: inline-block;
+}
+.dakai img{
+    position: absolute;
+    left: -37px;
+    bottom: 9px;
+}
+.ls_box div{
+    text-align: left;
+}
+.complete{
+    width: 1188px;
+    height: 191px;
+    background-color: #f3f6f8;
+    border: 1px solid #c8cac9;
+    margin: 0 auto 387px;
+}
+.complete form{
+    height: 100%;
+    padding-left: 95px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+

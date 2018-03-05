@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布任务</title>
+    <link rel="stylesheet" href="../style/commons/common.css">
+    <link rel="stylesheet" href="../style/page/faburenwu.css">
+    <script src="../js/wangEditor.min.js"></script>
+</head>
+<body>
+<!--页眉-->
+<div style="background-color: #f7f7f7;">
+    <div class="header">
+        <div class="clearfix">
+            <p class="fl">
+                当前位置>> <a href="../index/shouYe.html">首页>></a><i><a href="">发布任务</a></i>
+            </p>
+            <div class="fr">
+                <a href="" style="border-left: 1px solid #aaaaaa; border-right: 1px solid #aaaaaa; padding: 0 10px;">帮助中心</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header_box" style="background-color: white; border-bottom: 1px solid #c8cac9">
+    <div class="comWidth clearfix" style="width: 1400px; margin: 0 auto;">
+        <img src="../images/commons/01.png" alt="">
+        <div class="header_box2 fr">
+            <ul class="clearfix">
+                <li class="brnone"><a href="../index/faburenwu1.html">发布任务</a></li>
+                <li style="margin-right: 5px;"><a href="../index/faburenwu.html">浏览任务</a></li>
+                <li class="brnone"><a href="../index/denglv.html"><i class="deng_l"></i>登录</a></li>
+                <li><a href="../index/huiyuanzhuce.html"><i class="zhuce"></i>注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--中间的-->
+<div class="detailed">
+    <div class="detailed1">
+        <h2>选择任务明细</h2>
+        <div class="clearfix">
+            <dl>
+                <dt>零件类型</dt>
+                <dd>
+                    工件
+                    <ol>
+                        <li>电极</li>
+                    </ol>
+                </dd>
+            </dl>
+            <dl>
+                <dt>编程组</dt>
+                <dd>
+                    CNC
+                    <ol>
+                        <li>W/C线切割</li>
+                    </ol>
+                </dd>
+            </dl>
+            <dl>
+                <dt>机台类型</dt>
+                <dd>
+                    2轴
+                    <ol>
+                        <li>3轴</li>
+                        <li>4轴</li>
+                        <li>5轴</li>
+                    </ol>
+                </dd>
+            </dl>
+            <dl>
+                <dt>编程软件</dt>
+                <dd>
+                    UG
+                    <ol>
+                        <li>Pro-E</li>
+                        <li>Powermill</li>
+                        <li>Hypermill</li>
+                        <li>Worknc</li>
+                        <li>其他备注说明</li>
+                    </ol>
+                </dd>
+            </dl>
+        </div>
+        <h3>表明需求标题和详情 <span>逛逛任务大厅看看别人怎么写！</span></h3>
+        <form action="">
+            <p><input type="text" placeholder="用一句话表明您要做的项目，比如：某某某"><i></i></p>
+        </form>
+        <div class="renwu">
+            <form id="form2" action="" method="post" style="">
+                <div id="editor" style="width: 802px;background-color: white;"></div>
+                <input name="editor" id="editorInput" type="hidden" placeholder="请标明您的任务说明"> <!--这个隐藏的输入框是为了放数据，就是富文本里你输入的数据-->
+                <p><em>1</em>任务需求不得少于5个字</p>
+            </form>
+        </div>
+        <p style="height: 60px; line-height: 60px;margin-bottom: 25px;">最多可添加 <em style="color: #e60012;">5</em> 个图片/文件，每个大笑不超过 <em style="color: #e60012;">20MB</em><em style="color: #00d3e6; margin-left: 36px;">无法正常上传附件？</em></p>
+        <h4 class="drawing1">添加附件：</h4>
+        <form action="">
+            <div class="drawing"><em>2D图纸</em><input type="text"></div>
+            <div class="drawing"><em>3S图纸</em><input type="text"></div>
+            <div class="drawing" style="margin-bottom: 35px;"><em>工艺文件</em><input type="text"></div>
+            <div><span>完善任务清单:</span><input class="moban" type="submit" value="点击下载模板"><input class="release1" type="submit" value="上传"></div>
+            <h5 class="drawing1">联系方式：</h5>
+            <div class="drawing2"><em></em><input type="text" value="请输入您的手机号码"></div>
+            <h6 class="drawing1">选择周期</h6>
+            <div class="cycle">
+                <h2>期望完成周期</h2>
+                <select name="" id="">
+                    <option value ="volvo">加急 (1-3天)</option>
+                    <option value ="saab">4-6天</option>
+                    <option value="audi">一周以上</option>
+                </select>
+            </div>
+            <div style="height: 94px;line-height: 94px;">
+                <input type="checkbox">同意<em>《模云网任务发布协议》</em>
+            </div>
+            <p>
+                <input class="release" type="text" value="发布任务">
+                <input class="release1" type="text" value="保存">
+            </p>
+        </form>
+        <img src="../images/7.png" alt="">
+    </div>
+
+    <script type="text/javascript">
+        // 你没引入jq，我用的原生的写的
+        // 下面是个闭包，防止全局变量污染
+        (function () {
+
+            var form2 = document.getElementById('form2');
+            var editorInput = document.getElementById('editorInput');
+            var button = document.getElementById('button');
+            var E = window.wangEditor;
+            var editor = new E('#editor');
+            editor.create();
+            button.addEventListener('click', function (ev) {
+                ev.stopPropagation();
+                ev.preventDefault(); //先阻止默认行为，不让提交，因为要吧数据放到隐藏的input里
+                editorInput.value = editor.txt.html(); // 给那个隐藏的用来提交数据的input赋值value
+                form2.submit(); // 表单提交   其实正常情况下 直接input type=submit 就可以提交了   因为你这里情况特殊
+            })
+        })();
+    </script>
+</div>
+<!--底部-->
+<div style="border-top: 2px solid #51bbf8">
+    <div class="footer comWidth">
+        <p class="fl">© fengbo 上海风博数据有限公司 沪公网安备 12345678910234号</p>
+        <div class="fl">
+            <h3>关注我们</h3>
+            <img src="../images/commons/05.png" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>

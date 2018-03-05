@@ -1,0 +1,104 @@
+.register {
+    width: 654px;
+    padding: 0 50px;
+    border: 1px solid #aaaaaa;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+    font-size: 16px;
+}
+
+.register h2 {
+    font-size: 32px;
+    height: 120px;
+    line-height: 120px;
+    border-bottom: 3px solid #d0d0d0;
+}
+
+.register h3 {
+    margin-top: 20px;
+}
+
+.register p {
+    position: relative;
+}
+
+.register p input {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #aaaaaa;
+    padding-left: 60px;
+}
+
+.register em {
+    display: inline-block;
+    width: 50px;
+    height: 46px;
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+}
+
+.register em.identity {
+    background: #e5e5e5 url(../../images/huiyuanzhuce/1.png) no-repeat center center;
+}
+
+.register em.secret {
+    background: #e5e5e5 url(../../images/huiyuanzhuce/2.png) no-repeat center center;
+}
+
+.register em.mailbox {
+    background: #e5e5e5 url(../../images/huiyuanzhuce/3.png) no-repeat center center;
+}
+
+.register em.mailbox1 {
+    background: #e5e5e5 url(../../images/huiyuanzhuce/4.png) no-repeat center center;
+}
+
+.register p input.huoqu {
+    width: 148px;
+    background-color: #45b6f7;
+    color: #ffffff;
+    padding-left: 0;
+}
+
+.register p input.read {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aaaaaa;
+}
+
+.register p.liji input {
+    width: 130px;
+    height: 48px;
+    padding-left: 0;
+    color: #ffffff;
+    line-height: 48px;
+    background-color: #f7552f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
